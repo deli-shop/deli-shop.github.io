@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="https://deli-shop.github.io/delishop/assets/favicon.jpg">
+  <title>델리샵(DELISHOP) | 해외 의약품 직구·상품 및 성분 정보</title>
+  <meta name="description" content="델리샵(DELISHOP) 사이트 소개. 해외 의약품 직구 및 구매대행 관련 상품·성분 정보, 마운자로·위고비·프로페시아·아보다트 등 주요 의약품 정보와 이용 안내를 확인하세요.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="google-site-verification" content="8x_c6tI7sMDgo4SM6EKk05mVG5dPQAMo--EpiXza82I">
+    <link rel="canonical" href="https://deli-shop.github.io/delishop/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="DELISHOP">
+  <meta property="og:title" content="델리샵(DELISHOP) | 해외 의약품 직구·상품 및 성분 정보">
+  <meta property="og:description" content="델리샵 사이트 소개와 주요 의약품·성분 정보, 주문 및 배송 이용 안내를 확인하세요.">
+  <meta property="og:url" content="https://deli-shop.github.io/delishop">
+  <meta property="og:image" content="https://deli-shop.github.io/delishop/assets/header_logo.svg">
+
+  <style>
+    /* Standalone document normalization */
+    html { scroll-behavior: smooth; }
+    body { margin: 0; }
+  </style>
+
+<style>
+.ds-intro {
+  --blue:#1787f5;
+  --green:#0bbf87;
+  --navy:#152845;
+  --muted:#66758d;
+  --line:#e1eaf4;
+  --light:#f5f9ff;
+  font-family:Pretendard,"Noto Sans KR",sans-serif;
+  color:var(--navy);
+  background:#fff;
+  line-height:1.75;
+  word-break:keep-all;
+}
+.ds-intro,
+.ds-intro * {box-sizing:border-box}
+.ds-intro a {text-decoration:none}
+.ds-intro button,
+.ds-intro input {font:inherit}
+.ds-intro button {cursor:pointer}
+.ds-intro .wrap {
+  width:min(1100px,calc(100% - 36px));
+  margin:auto;
+}
+.ds-intro .blue {color:var(--blue)}
+.ds-intro .green {color:var(--green)}
+.ds-intro .hero {
+  position:relative;
+  padding:85px 0 75px;
+  text-align:center;
+  background:
+    radial-gradient(ellipse at 8% 25%,#e8f3ff,transparent 40%),
+    radial-gradient(ellipse at 90% 20%,#e7fff4,transparent 38%),
+    #fff;
+}
+.ds-intro .eyebrow {
+  color:var(--blue);
+  font-size:13px;
+  font-weight:850;
+  letter-spacing:2px;
+}
+.ds-intro h1 {
+  font-size:clamp(31px,5vw,58px);
+  line-height:1.3;
+  font-weight:900;
+  letter-spacing:-.055em;
+  margin:20px 0;
+}
+.ds-intro .hero-desc {
+  max-width:760px;
+  margin:20px auto 0;
+  font-size:clamp(15px,1.6vw,18px);
+  color:var(--muted);
+}
+.ds-intro .chips {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin:27px 0;
+}
+.ds-intro .chip {
+  padding:7px 15px;
+  border:1px solid #d9e8fa;
+  border-radius:30px;
+  background:#fff;
+  color:#415574;
+  font-size:13px;
+  font-weight:700;
+}
+.ds-intro .actions {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin:28px 0;
+}
+.ds-intro .btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 23px;
+  border-radius:11px;
+  font-size:14px;
+  font-weight:800;
+  transition:transform .2s,box-shadow .2s;
+}
+.ds-intro .btn:hover {transform:translateY(-3px)}
+.ds-intro .btn-primary {
+  color:#fff!important;
+  background:var(--blue);
+  box-shadow:0 9px 24px #1787f52a;
+}
+.ds-intro .btn-outline {
+  color:var(--navy)!important;
+  background:#fff;
+  border:1px solid var(--line);
+}
+.ds-intro .section {padding:78px 0}
+.ds-intro .section-alt {background:var(--light)}
+.ds-intro .heading {
+  max-width:800px;
+  text-align:center;
+  margin:0 auto 35px;
+}
+.ds-intro .heading h2 {
+  font-size:clamp(25px,3vw,36px);
+  letter-spacing:-.04em;
+  line-height:1.4;
+  margin:10px 0 15px;
+}
+.ds-intro .heading p {
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* Browser-style service interface */
+.ds-intro .browser {
+  max-width:1000px;
+  margin:45px auto 0;
+  border:2px solid #b4d5ff;
+  border-radius:17px;
+  text-align:left;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 22px 55px #145aa51b;
+}
+.ds-intro .browser-top {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  height:30px;
+  padding:0 15px;
+  background:linear-gradient(90deg,#e6f2ff,#c6e1ff);
+}
+.ds-intro .dot {
+  width:9px;height:9px;border-radius:50%;
+  background:#ff7770;
+}
+.ds-intro .dot:nth-child(2){background:#ffce52}
+.ds-intro .dot:nth-child(3){background:#35c783}
+.ds-intro .browser-body {
+  display:grid;
+  grid-template-columns:190px minmax(0,1fr);
+}
+.ds-intro .side {
+  padding:22px 13px;
+  border-right:1px solid var(--line);
+  background:#fbfdff;
+}
+.ds-intro .side-brand {
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:-.035em;
+  margin:0 0 22px 8px;
+}
+.ds-intro .side a {
+  display:block;
+  padding:10px 12px;
+  margin:3px 0;
+  border-radius:8px;
+  color:#53647d;
+  font-size:13px;
+  font-weight:700;
+}
+.ds-intro .side a:hover,
+.ds-intro .side a:first-of-type {
+  background:#eaf3ff;
+  color:#1678df;
+}
+.ds-intro .browser-main {
+  min-width:0;
+  padding:22px;
+}
+.ds-intro .search {
+  display:flex;
+  align-items:center;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:6px;
+  gap:6px;
+}
+.ds-intro .search input {
+  flex:1;min-width:0;
+  border:0;outline:0;
+  background:transparent;
+  box-shadow:none;
+  padding:6px 10px;
+  font-size:13px;
+  color:var(--navy);
+}
+.ds-intro .search button {
+  border:0;
+  border-radius:7px;
+  background:var(--blue);
+  color:#fff;
+  padding:8px 13px;
+  font-size:12px;
+  font-weight:700;
+}
+.ds-intro .tabs {
+  display:flex;
+  overflow-x:auto;
+  gap:7px;
+  padding:15px 0;
+}
+.ds-intro .tab {
+  white-space:nowrap;
+  padding:7px 12px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:#53647d;
+  font-size:12px;
+  font-weight:700;
+}
+.ds-intro .tab[aria-pressed="true"] {
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+}
+.ds-intro .product-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+}
+.ds-intro .product-card {
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  transition:transform .2s,box-shadow .2s;
+}
+.ds-intro .product-card:hover {
+  transform:translateY(-3px);
+  box-shadow:0 10px 26px #175fa012;
+}
+.ds-intro .product-card[hidden] {display:none}
+.ds-intro .card-tag {
+  font-size:11px;
+  font-weight:850;
+  color:var(--blue);
+}
+.ds-intro .product-card h3 {
+  font-size:18px;
+  line-height:1.45;
+  margin:9px 0;
+  letter-spacing:-.03em;
+}
+.ds-intro .product-card p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+  margin:0 0 13px;
+}
+.ds-intro .product-card .links {
+  margin-top:auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px 14px;
+}
+.ds-intro .product-card a {
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+}
+.ds-intro .empty {
+  display:none;
+  padding:25px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+.ds-intro .note {
+  font-size:12px;
+  color:var(--muted);
+  margin:20px 0 0;
+  text-align:left;
+}
+
+/* Intro text */
+.ds-intro .article {
+  max-width:850px;
+  margin:auto;
+}
+.ds-intro .article h2 {
+  font-size:27px;
+  line-height:1.4;
+  margin:0 0 21px;
+  letter-spacing:-.035em;
+}
+.ds-intro .article h3 {
+  font-size:20px;
+  margin:28px 0 12px;
+}
+.ds-intro .article p {
+  color:#44526a;
+  margin:0 0 16px;
+  font-size:16px;
+}
+.ds-intro .info-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+  margin-top:30px;
+}
+.ds-intro .info-box {
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  padding:25px;
+}
+.ds-intro .info-box b {
+  color:var(--blue);
+  font-size:12px;
+}
+.ds-intro .info-box h3 {
+  margin:10px 0;
+  font-size:19px;
+}
+.ds-intro .info-box p {
+  font-size:13px;
+  color:var(--muted);
+  margin:0 0 14px;
+}
+.ds-intro .info-box a {
+  color:var(--blue);
+  font-size:13px;
+  font-weight:800;
+}
+.ds-intro .faq {
+  max-width:820px;
+  margin:auto;
+}
+.ds-intro .faq details {
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:11px;
+  margin:10px 0;
+  padding:18px 22px;
+}
+.ds-intro .faq summary {
+  cursor:pointer;
+  font-size:15px;
+  font-weight:800;
+}
+.ds-intro .faq p {
+  color:var(--muted);
+  font-size:14px;
+  margin:13px 0 0;
+}
+.ds-intro .final {
+  background:linear-gradient(115deg,#edf6ff,#eafff5);
+  padding:68px 20px;
+  text-align:center;
+}
+.ds-intro .final h2 {
+  font-size:clamp(25px,3.4vw,38px);
+  margin:0 0 13px;
+}
+.ds-intro .final p {
+  color:var(--muted);
+  margin:0 0 23px;
+}
+@media(max-width:850px) {
+  .ds-intro .browser-body {
+    grid-template-columns:145px minmax(0,1fr);
+  }
+  .ds-intro .browser-main {padding:15px}
+}
+@media(max-width:650px) {
+  .ds-intro .hero {padding:55px 0}
+  .ds-intro .side {display:none}
+  .ds-intro .browser-body {display:block}
+  .ds-intro .browser-main {padding:12px}
+  .ds-intro .product-grid {grid-template-columns:1fr}
+  .ds-intro .product-card {padding:17px}
+  .ds-intro .info-grid {grid-template-columns:1fr}
+  .ds-intro .section {padding:58px 0}
+  .ds-intro .chip {font-size:11px;padding:6px 10px}
+  .ds-intro .article p {font-size:15px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .ds-intro *, .ds-intro *::before,
+  .ds-intro *::after {transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="ds-intro" id="ds-intro-seo">
+
+  <!-- 1. SEO HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">WELCOME TO DELISHOP</div>
+
+      <h1>
+        <span class="blue">델리샵(DELISHOP)</span><br>
+        해외 의약품 직구 및<br>
+        <span class="green">건강 정보 안내</span>
+      </h1>
+
+      <p class="hero-desc">
+        마운자로·위고비부터 프로페시아·아보다트까지.<br>
+        델리샵 사이트에서 다양한 해외 의약품과 건강 관련 상품 정보를 살펴보세요.<br>
+        <br>
+        다양한 제품/성분 직구 정보와 쇼핑몰 이용 안내를 한곳에 모았습니다.
+      </p>
+
+      <div class="chips">
+        <span class="chip">해외 의약품 정보</span>
+        <span class="chip">성분·함량 안내</span>
+        <span class="chip">주문·배송 정보</span>
+        <span class="chip">고객지원</span>
+      </div>
+
+      <div class="actions">
+        <a href="https://shop-deli.org/"
+           class="btn btn-primary">
+          델리샵 사이트 방문하기 ↗
+        </a>
+        <a href="#ds-about"
+           class="btn btn-outline">
+          델리샵 소개 보기 ↓
+        </a>
+      </div>
+
+      <!-- INTERACTIVE CATEGORY PREVIEW -->
+      <div class="browser" id="ds-search-area">
+        <div class="browser-top" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="browser-body">
+          <nav class="side" aria-label="델리샵 서비스 메뉴">
+            <div class="side-brand">
+              <span class="blue">✦</span> DELISHOP
+            </div>
+            <a href="#ds-about">⌂ &nbsp; 델리샵 소개</a>
+            <a href="#ds-search-area">▦ &nbsp; 상품·성분</a>
+            <a href="#ds-use-guide">▤ &nbsp; 이용 가이드</a>
+            <a href="#ds-faq">? &nbsp; FAQ</a>
+          </nav>
+
+          <div class="browser-main">
+            <div class="search" role="search">
+              <input type="search"
+                class="ds-keyword-input"
+                aria-label="상품명 또는 성분명 검색"
+                placeholder="마운자로, 프로페시아, 이버멕틴 등 검색">
+              <button type="button"
+                class="ds-keyword-button">검색</button>
+            </div>
+
+            <div class="tabs" role="group" aria-label="건강 주제 필터">
+              <button class="tab" data-category="all"
+                aria-pressed="true">전체</button>
+              <button class="tab" data-category="diet"
+                aria-pressed="false">체중관리</button>
+              <button class="tab" data-category="hair"
+                aria-pressed="false">탈모</button>
+              <button class="tab" data-category="skin"
+                aria-pressed="false">피부·구충</button>
+              <button class="tab" data-category="antibiotic"
+                aria-pressed="false">항생제</button>
+              <button class="tab" data-category="sleep"
+                aria-pressed="false">수면</button>
+              <button class="tab" data-category="men"
+                aria-pressed="false">남성 건강</button>
+            </div>
+
+            <div class="product-grid">
+
+              <!-- WEIGHT -->
+              <article class="product-card" data-category="diet">
+                <span class="card-tag">체중관리 · GLP-1 관련 정보</span>
+                <h3>마운자로 · 위고비</h3>
+                <p>
+                  마운자로(터제파타이드)와 위고비(세마글루타이드)는 당뇨 및 체중관리 분야에서 자주 검색되는 의약품입니다.
+                  성분, 작용 기전, 제형과 용량을 구분하여 확인하는 것이 중요합니다.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/다이어트/마운자로/">
+                    마운자로 정보 →
+                  </a>
+                  <a href="https://shop-deli.org/product-category/products/다이어트/위고비/">
+                    위고비 정보 →
+                  </a>
+                </div>
+              </article>
+
+              <!-- HAIR -->
+              <article class="product-card" data-category="hair">
+                <span class="card-tag">탈모·헤어관리</span>
+                <h3>프로페시아 · 아보다트</h3>
+                <p>
+                  프로페시아는 피나스테리드, 아보다트는 두타스테리드를 주요 성분으로 하는 의약품입니다.
+                  탈모 치료제의 성분 차이와 함량, 사용 시 주의사항을 확인해 보세요.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/탈모-헤어관리/프로페시아피나스테리드/">
+                    프로페시아 정보 →
+                  </a>
+                  <a href="https://shop-deli.org/product-category/products/탈모-헤어관리/아보다트두타스테리드/">
+                    아보다트 정보 →
+                  </a>
+                </div>
+              </article>
+
+              <!-- SKIN -->
+              <article class="product-card" data-category="skin">
+                <span class="card-tag">피부관리 · 구충제</span>
+                <h3>수란트라 · 이버멕틴</h3>
+                <p>
+                  수란트라는 이버멕틴을 함유한 외용 의약품입니다.
+                  이버멕틴은 경구제 등 다른 제형으로도 사용되므로 제품별 제형과 허가된 사용 목적을 구분해야 합니다.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/미용-스킨케어/">
+                    피부 관련 정보 →
+                  </a>
+                  <a href="https://shop-deli.org/product-category/products/구충제/이버멕틴-구충제/">
+                    이버멕틴 정보 →
+                  </a>
+                </div>
+              </article>
+
+              <!-- ANTIBIOTIC -->
+              <article class="product-card" data-category="antibiotic">
+                <span class="card-tag">항생제·감염증</span>
+                <h3>독시사이클린</h3>
+                <p>
+                  독시사이클린은 테트라사이클린계 항생제로<br>
+                  일부 세균성 감염증의 치료에 사용됩니다. 독감 같은 바이러스 감염에는 효과가 없습니다.
+                  사용 목적, 약물 상호작용 및 주의사항 등을 반드시 확인하세요.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/항생제-감염증/">
+                    항생제 관련 정보 →
+                  </a>
+                </div>
+              </article>
+
+              <!-- SLEEP -->
+              <article class="product-card" data-category="sleep">
+                <span class="card-tag">수면·멘탈 케어</span>
+                <h3>데이비고</h3>
+                <p>
+                  데이비고(Dayvigo)는 렘보렉산트 성분의 불면증 치료제입니다. 
+                  오렉신 수용체 길항제의 특징과 수면 관련 약물의 주의사항 등 기본적인 정보를 살펴볼 수 있습니다.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/수면-멘탈-케어/불면증-수면유도제/">
+                    수면 관련 정보 →
+                  </a>
+                </div>
+              </article>
+
+              <!-- MEN -->
+              <article class="product-card" data-category="men">
+                <span class="card-tag">남성 건강 · 성분 정보</span>
+                <h3>타다라필 · 비아그라 · 시알리스</h3>
+                <p>
+                  시알리스는 타다라필, 비아그라는 실데나필 성분입니다.<br>
+                  두 성분의 작용 지속시간과 약물 상호작용 등 주의해야 할 정보를 찾아보실 수 있습니다.
+                </p>
+                <div class="links">
+                  <a href="https://shop-deli.org/product-category/products/성기능/시알리스/">
+                    시알리스·타다라필 정보 →
+                  </a>
+                  <a href="https://shop-deli.org/product-category/products/성기능/비아그라/">
+                    비아그라 정보 →
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <p class="empty" role="status">
+              자세한 정보는 델리샵 사이트에서 확인 가능합니다.
+            </p>
+
+            <p class="note">
+              ※ 제품 정보는 일반적인 정보 탐색을 위한 안내입니다.
+              실제 처방 필요 여부, 국내 허가 및 수입 가능 여부, 금기사항은 제품별로 확인해야 합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ACTUAL BRAND DESCRIPTION -->
+  <section class="section" id="ds-about">
+    <div class="wrap">
+      <article class="article">
+        <span class="eyebrow">ABOUT DELISHOP</span>
+        <h2>델리샵은 어떤 곳인가요?</h2>
+
+        <p>
+          <strong>델리샵(DELISHOP)</strong>은 해외 의약품 직구 및 구매대행 관련 상품 정보를 제공하는 온라인 서비스이며,<br>
+          체중관리, 탈모·헤어관리, 미용 스킨케어, 항생제·감염증, 수면·멘탈 케어, 남성 건강 등 다양한 정보를 확인할 수 있습니다.
+        </p>
+
+        <p>
+          제품을 찾는 방문자는 상품명뿐 아니라 성분명, 함량, 제형과 관련 정보를 기준으로 상품 페이지를 탐색할 수 있습니다.<br>
+          델리샵은 이러한 상품 정보와 함께 주문·배송 안내, 고객센터 및 커뮤니티 메뉴를 제공하고 있습니다.
+        </p>
+
+        <p>
+          예를 들어 체중관리 분야에서는 <strong>마운자로와 위고비</strong>,<br>
+          탈모·헤어관리에서는 <strong>프로페시아와 아보다트</strong>,<br>
+          피부 관련 분야에서는 <strong>수란트라와 이버멕틴</strong>에 관한 정보를 찾아볼 수 있습니다.<br>
+          <br>
+          이외에도 <strong>독시사이클린, 데이비고, 타다라필, 비아그라, 시알리스</strong> 등<br>
+          다양한 제품명과 성분 정보를 제공합니다.
+        </p>
+
+        <p>
+         의약품 직구 또는 델리샵 구매 관련 정보를 찾고 있다면 제품 상세 설명 뿐 아니라<br>
+          배송기간, 통관 요건, 결제 및 환불 지원 여부를 확인하는 것이 중요합니다.<br>
+          특히 의약품은 국내 법령에 따른 구매·수입 제한이나 처방 요건이 적용될 수 있으므로 이를 먼저 확인해야 합니다.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. SITE GUIDE -->
+  <section class="section section-alt" id="ds-use-guide">
+    <div class="wrap">
+      <header class="heading">
+        <span class="eyebrow">DELISHOP GUIDE</span>
+        <h2>델리샵 이용 전 알아두면 좋은 정보</h2>
+        <p>
+          서비스 내에서 제공하는 다양한 정보 및 주요 메뉴를 소개합니다.
+        </p>
+      </header>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <b>01 / PRODUCTS</b>
+          <h3>상품·성분 정보</h3>
+          <p>
+            제품명과 성분, 제형 및 함량을 확인하고 텍스트, 이미지, 동영상 등 다양한 정보를 간편하게 확인하세요.
+          </p>
+          <a href="https://shop-deli.org/product-category/products/">
+            상품 카테고리 보기 →
+          </a>
+        </div>
+
+        <div class="info-box">
+          <b>02 / SUPPORT</b>
+          <h3>주문·배송 안내</h3>
+          <p>
+            배송조회, 예상 배송기간, 고객센터 문의 방법, 환불 관련 안내를 확인할 수 있습니다.
+          </p>
+          <a href="https://shop-deli.org/service/">
+            고객센터 안내 보기 →
+          </a>
+        </div>
+
+        <div class="info-box">
+          <b>03 / COMMUNITY</b>
+          <h3>커뮤니티</h3>
+          <p>
+            델리샵 커뮤니티에서 다른 이용자들의 질문, 정보 공유, 공지사항 등을 살펴볼 수 있습니다.
+          </p>
+          <a href="https://shop-deli.org/community/">
+            커뮤니티 방문하기 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BRAND FAQ -->
+  <section class="section" id="ds-faq">
+    <div class="wrap">
+      <header class="heading">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2>델리샵 사이트 자주 묻는 질문</h2>
+        <p>델리샵 이용 및 상품 정보 검색에 관한 안내입니다.</p>
+      </header>
+
+      <div class="faq">
+        <details>
+          <summary>델리샵(DELISHOP)은 어떤 사이트인가요?</summary>
+          <p>
+            델리샵은 해외 의약품 직구 및 구매대행 관련 상품 정보를 제공하는 온라인 직구대행 서비스입니다.
+            상품 카테고리와 제품 설명 외에도 매거진, 커뮤니티, 실시간 상담 등을 통해 다양한 정보를 제공합니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>델리샵 사이트에는 어떤 제품들의 정보가 있나요?</summary>
+          <p>
+            마운자로, 위고비, 프로페시아, 아보다트, 수란트라, 이버멕틴, 독시사이클린, 데이비고, 타다라필, 비아그라, 시알리스 등
+            여러 제품 및 성분 관련 정보를 찾을 수 있습니다. 실제 상품 제공 여부와 상태는 변동될 수 있습니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>델리샵 직구가 무엇인가요?</summary>
+          <p>
+            제품별 국내 허가 여부, 처방 필요 여부, 수입·통관 제한, 안전정보 및 상품 설명을 먼저 확인해야 하며,
+            델리샵은 주문/배송만 대행할 뿐 절대 제품을 직접 보유하고 배송하지 않습니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>마운자로와 위고비는 같은 성분인가요?</summary>
+          <p>
+            아닙니다. 마운자로는 터제파타이드, 위고비는 세마글루타이드 성분의 의약품입니다.
+            GLP-1 제품 사용 전 적응증, 제형, 용량 및 주의사항을 반드시 확인해야 합니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>프로페시아와 아보다트의 성분은 무엇인가요?</summary>
+          <p>
+            프로페시아의 주요 성분은 피나스테리드, 아보다트의 주요 성분은 두타스테리드입니다.
+            두 성분은 서로 다르므로 개인의 치료 계획에 따라 의료 전문가의 판단이 필요합니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>높은 함량/용량을 복용하는게 더 좋은거 아닌가요?</summary>
+          <p>
+            아닙니다. 모든 성분은 용량별로 적응증, 효과, 복약 방법 등이 다를 수 있습니다.
+            따라서 복용 전 각각의 특징, 복용 방법, 특정 약물과의 병용 금기, 중요한 주의사항 등을 확인하는 것이 중요하며,
+            자세한 정보는 델리샵 사이트에서 확인하실 수 있습니다.
+          </p>
+        </details>
+
+        <details>
+          <summary>주문/복용 사실을 주변에 알리고 싶지 않아요.</summary>
+          <p>
+            주문 및 배송 관련 개인정보 보호와 포장 안내는 델리샵의 개인정보처리방침 및 고객센터 공지를 확인해 주세요.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FINAL BRAND CTA -->
+  <section class="final">
+    <div class="wrap">
+      <span class="eyebrow">DELISHOP OFFICIAL SITE</span>
+      <h2>
+        상품 정보부터 이용 안내까지.<br>
+        <span class="blue">델리샵 사이트</span>에서 확인하세요.
+      </h2>
+      <p>
+        다양한 상품·성분 정보를 확인할 수 있습니다.
+      </p>
+      <a class="btn btn-primary"
+         href="https://shop-deli.org/">
+        델리샵 사이트 바로가기 →
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- FILTER / SEARCH INTERACTION -->
+<script>
+(function() {
+  const root = document.getElementById("ds-intro-seo");
+  if (!root) return;
+
+  const tabs = Array.from(root.querySelectorAll(".tab"));
+  const cards = Array.from(root.querySelectorAll(".product-card"));
+  const input = root.querySelector(".ds-keyword-input");
+  const button = root.querySelector(".ds-keyword-button");
+  const empty = root.querySelector(".empty");
+
+  let selected = "all";
+
+  function filterCards() {
+    const keyword = input.value
+      .trim().toLocaleLowerCase("ko-KR");
+    let count = 0;
+
+    cards.forEach(card => {
+      const categoryMatch =
+        selected === "all" ||
+        card.dataset.category === selected;
+
+      const textMatch = card.textContent
+        .toLocaleLowerCase("ko-KR")
+        .includes(keyword);
+
+      const visible = categoryMatch && textMatch;
+      card.hidden = !visible;
+      if (visible) count++;
+    });
+
+    empty.style.display = count === 0 ? "block" : "none";
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      selected = tab.dataset.category;
+
+      tabs.forEach(t => {
+        t.setAttribute("aria-pressed", String(t === tab));
+      });
+
+      filterCards();
+    });
+  });
+
+  input.addEventListener("input", filterCards);
+  button.addEventListener("click", filterCards);
+})();
+</script>
+</body>
+</html>
